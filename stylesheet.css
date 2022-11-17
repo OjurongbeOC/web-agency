@@ -1,0 +1,253 @@
+*{
+	box-sizing: border-box;font-family: 'Roboto Flex',sans-serif;scroll-behavior: smooth;
+}
+html,body{
+	margin: 0;padding: 0;
+}
+header
+{
+	display: flex;justify-content: space-between;align-items: center;background: white;
+	color: black;padding: 20px 5%;height: 80px;
+}
+nav>ul>li{
+	display: inline-block;list-style-type: none;margin-right: 4px;
+}
+nav a{
+	color: black;text-decoration: none;transition-duration: .5s;
+}
+nav  a:hover{
+   color: silver;
+}
+label{
+   font-size: 22px;
+}
+.sign{
+	padding: 10px 20px;background: rgb(10,120,255);color: white;border: none;cursor: pointer;
+}
+.sign:hover{
+	background: white; color: rgb(10,120,255);border: 2px solid rgb(10,120,255);
+}
+section{
+	height: 90vh;display: flex;justify-content: center;
+    align-items: center;color: white;
+    background-color: silver;width: 100%
+}
+.swiper-slide{
+	display: flex;align-items: center;flex-direction: column;text-shadow: 0px 0px 5px black;padding: 0 70px;
+}
+section a{
+	text-decoration: none;color: white;
+}
+section button{
+	background: rgb(30,90,155);color: white;width: 160px;height: 60px;border: none;transition-duration: 1s;cursor: pointer;opacity: 0.9;
+}
+section button:hover{
+     opacity: 0.6;
+}
+#open{
+	color: black;
+}
+.click{
+background: transparent;border: none;cursor: pointer;
+}
+#change{
+	display: none;
+}
+#what{
+	color: rgb(255,255,255);
+}
+.services{
+	text-align: center;display: flex;justify-content: center;align-items: center;flex-direction: column;margin-top: 200px;margin-bottom: 50px;
+}
+.service{
+	margin-top: 150px;
+}
+.serv::after{
+    content: " ";display: block;background: rgb(10,100,200);width: 60px;height: 2px;margin-top: .3rem;
+}
+.why-services::after{
+	content: " ";display: block;background: rgb(10,100,200);width: 80px;height: 2px;float: center;margin-top: .3rem;
+}
+.services-item{
+	display: grid;grid-template-columns: repeat(3,1fr);
+	grid-gap: 1rem;
+	padding: 1.5rem;
+}
+.img-serve{
+	width: 100px; height: 100px;
+}
+.item{
+	background-color: white;padding: .5rem;display: flex;justify-content: center;align-items: center;flex-direction: column;
+}
+.item p{
+	text-align: center;
+}
+.item h2{
+	text-align: center;
+}
+.about{
+	display: flex; word-spacing: 6px;letter-spacing: 2px;justify-content: center;align-items: center;flex-direction: column;padding: 0% 20%;
+}
+.about-content{
+	width: 500px;background-color: white;padding: 1.5rem;
+}
+.about button{
+	border: 1px solid black;background-color: white; color: black;width: 160px;height: 55px;cursor: pointer;margin-top: 15px;
+}
+.why{
+	display: grid;grid-template-columns: repeat(3,1fr);padding: 2.5rem;grid-gap: 1.5rem;
+}
+.why-item{
+	padding: .5rem;display: flex;justify-content: center;align-items: center;flex-direction: column;text-align: center;
+}
+.contact{
+	position: relative; height: 420px;padding: 30px 0px;font-size: 20px;text-shadow: 0px 0px 15px black;text-align: center; 
+	display: flex;justify-content: center;align-items: center;flex-direction: column;
+}
+.contact::before{
+	content: "";position: absolute;background: black;background-image: url('https://media.istockphoto.com/photos/team-work-for-graphic-design-working-on-wood-table-picture-id1169108348?b=1&k=20&m=1169108348&s=170667a&w=0&h=mxotrxGqUc8vWw82rTO_c3nwfkEqlGkN2o2dEpAAlUM=');
+	width: 100%;height: 100%;filter: brightness(50%);z-index: -1;left: 0;
+	background-size: cover;background-repeat: no-repeat;background-attachment: fixed;
+}
+.contact p{
+	color: white;
+}
+.contact button{
+	background: rgb(0,100,200);padding: 10px 20px;color: white;font-size: 20px; opacity: 0.7;border: none;cursor: pointer;width: 200px;height: 65px;
+}
+.contact button:hover{
+	background: rgb(0,0,50)
+}
+.review{
+	color: rgb(10,10,30);background-image:none;
+}
+.review-head{
+	text-align: center;margin: 80px 0px 20px 0px;
+}
+.review-item{
+	text-align: center;background: white;padding: .5rem;text-shadow: 0px 0px 0px;
+}
+footer{
+	margin-top: 100px;background: rgb(10,10,30);color: white;
+}
+footer ul{
+	list-style-type: none;
+}
+footer a{
+	text-decoration: none;color: white;
+}
+.foot{
+	display: grid;grid-template-columns: repeat(3,1fr);padding: 1.5rem;
+}
+.copy{
+     text-align: center; width: 100%;padding: 20px 0px;border-top: 2px solid rgb(0,0,20);
+}
+.scroll{
+	position: fixed;bottom: 25%;right: 3%;cursor: pointer; z-index: 1;color: white;background-color: rgba(10,10,40,0.7);border: none;
+}
+.swip{
+	background-color: rgb(10,120,255);color: white;padding: 30px;
+}
+
+.what-c{
+	 position: fixed;bottom: 23%;left: 3%;border-radius: 50%; cursor: pointer; z-index: 200;
+	 color: white;background-color: rgba(10,255,40,0.7);border: none;padding: 10px;
+}
+.review-desktop{
+	display: none;grid-gap: 1rem;grid-template-columns: repeat(4,1fr);padding: 10px 15%;
+}
+
+@media (min-width: 1300px){
+.services-item{
+	padding: 1.5rem 20%;
+}
+.why{
+	padding: 1.5rem 20%;
+}
+.swiper-rev,.review{
+	display: none;
+}
+.review-desktop{
+	display: grid;
+}
+}
+@media(max-width: 1000px){
+	@keyframes list{
+     from{
+     	transform-origin: left; transform: rotateY(180deg);
+     }
+     to{
+     	transform: rotateY(360deg);transform-origin: left;
+     }
+	}
+	@keyframes listo{
+		from{
+			transform: rotateZ(0deg);
+		}
+		to{
+			transform: rotateZ(360deg);
+		}
+	}
+	header{
+		 padding: 20px 5%;
+	}
+	#show{
+		display: none;position: fixed;top: 0;left: 0;background-color: rgb(20,55,90);color: white; width: 200px;height: 100%;
+     	perspective: 75rem; animation-name: list;animation-duration: 1s;padding-top: 30px;z-index: 100;opacity: 0.9;
+		 
+	}
+	nav>ul>li{
+		display: block;line-height: 60px;width: 200px;
+		border-bottom: 1px solid rgb(200,200,200);margin-left: -40px;
+	}
+	.qw:hover{
+		transform: rotateY(0deg);background-color: rgb(130,155,200);
+	}
+	.qwert:hover{
+		
+	}
+	nav a{
+		color: white;margin-left: 7px;
+	}
+	header button{
+        border: none;
+	}
+	.sign{
+	display: none;
+}
+#change{
+	display: inline;
+}
+#open{
+	animation-name: listoo;animation-duration: .5s;animation-timing-function: linear;color: rgb(50,50,50);
+}
+.services-item{
+	grid-template-columns: 1fr;justify-content: center;
+}
+.about{
+	padding: 1.5rem;
+}
+.foot{
+	grid-template-columns: 1fr;padding-left: 0px;
+}
+.why{
+	grid-template-columns: 1fr;
+
+}
+@media(max-width: 600px){
+	.swiper-rev{
+		width: 250px;height: 340px;
+	}
+	.swip{
+		display: none;
+	}
+	.swiper-slide{
+		padding: 5px;
+	}
+	header{
+		height: 60px;
+	}
+	.services{
+		margin-bottom: 0;
+	}
+}
